@@ -1,0 +1,3 @@
+a(X,Y) | b(X) :- j (X) in {1}, c (Y) at least 2 in [3 sec], h(Y+1,X+1).
+h(X+1,Y+1)|k(Y,X):- a(X,Y), Y<5, not t(Y) in {2}.
+

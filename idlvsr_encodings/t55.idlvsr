@@ -1,0 +1,4 @@
+a(X):-b(X) always in [2sec].
+b(X):-c(X).
+c(X):-a(X).
+h(X)|h(X+1):- a(X).
