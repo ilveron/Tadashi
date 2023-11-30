@@ -1,2 +1,2 @@
-# tadashi
-Correctness suite used in I-DLV-sr for non-deterministic programs
+# Tadashi
+info on usage to be provided soon
