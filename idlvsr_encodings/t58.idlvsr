@@ -1,4 +1,0 @@
-assign(D, S) | non_assign(D,S):- slot(D, S) in {1}.
-:~ assign(D, S).[1@1]
-:~ assign(D, S).[1@1, D] 
-:~ assign(D, S).[1@1, D, S]

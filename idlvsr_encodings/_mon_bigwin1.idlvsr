@@ -1,0 +1,2 @@
+w(T) | x(T) | y(T) | z(T) :- a(T) at least 2 in [30 min].
+a(X) :- b(X) in [1 min].

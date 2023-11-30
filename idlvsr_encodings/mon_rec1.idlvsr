@@ -1,0 +1,4 @@
+zip(A,B) | zap(A,B) :- tunf(A,B) in [5].
+splash(A) :- zip(A,_).
+swish(B) :- zap(_,B).
+zip(A,C) :- zip(A,B), zip(B,C).

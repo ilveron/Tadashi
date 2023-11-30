@@ -17,41 +17,49 @@ idlvsr_logs
   prog_3.log
 !tadashi
   !prog_1
-    $input_100
-    $input_101
-    $input_102
-    $input_103
+    !answersets
+      @prog_1_100.answersets
+      @prog_1_101.answersets
+      @prog_1_102.answersets
+      @prog_1_103.answersets
+    !inputs
+      $input_100
+      $input_101
+      $input_102
+      $input_103
     $prog_1.json
-    !rewriting.asp
-    @prog_1_100.answersets
-    @prog_1_101.answersets
-    @prog_1_102.answersets
-    @prog_1_103.answersets
+    !rewriting.asp 
   !prog_2
-    $input_200
-    $input_201
+    !answersets
+      @prog_2_200.answersets
+      @prog_2_201.answersets
+    !inputs
+      $input_200
+      $input_201
     $prog_2.json
     !rewriting.asp
-    @prog_2_200.answersets
-    @prog_2_201.answersets
   !prog_3
-    $input_300
-    $input_301
-    $input_302
-    $input_303
-    $input_304
-    $input_305
-    $input_306
-    $input_307
-    $input_308
+    !answersets
+      @prog_3_300.answersets
+      @prog_3_301.answersets
+      @prog_3_302.answersets
+      @prog_3_303.answersets
+      @prog_3_304.answersets
+      @prog_3_305.answersets
+      @prog_3_306.answersets
+      @prog_3_307.answersets
+      @prog_3_308.answersets
+    !inputs
+      $input_300
+      $input_301
+      $input_302
+      $input_303
+      $input_304
+      $input_305
+      $input_306
+      $input_307
+      $input_308
     $prog_3.json
     !rewriting.asp
-    @prog_3_300.answersets
-    @prog_3_301.answersets
-    @prog_3_302.answersets
-    @prog_3_303.answersets
-    @prog_3_304.answersets
-    @prog_3_305.answersets
-    @prog_3_306.answersets
-    @prog_3_307.answersets
-    @prog_3_308.answersets
+  report.txt
+  

@@ -1,0 +1,6 @@
+releaseDemo(Artist,Name,Value) | notReleaseDemo(Artist,Name,Value) :- notifyDemo(Artist,Name,Value) always in {0,1,2}.
+aggregateReleasedValue(V) :- V=#sum{Value,Name,Artist : releaseDemo(Artist,Name,Value)}.
+aggregateNotReleasedValue(V) :- V=#sum{Value,Name,Artist : notReleaseDemo(Artist,Name,Value)}.
+
+:- aggregateNotReleasedValue(V), V>500.
+

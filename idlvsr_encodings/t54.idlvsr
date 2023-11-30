@@ -1,2 +1,0 @@
-a | b :- c in [2 sec].
-d :- a, x always in [3 sec].

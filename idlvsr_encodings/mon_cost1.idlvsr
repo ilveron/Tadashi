@@ -1,0 +1,20 @@
+% candidate all people retrieved from last 5 seconds (6 timepoints)
+candidate(Id, Name) :- requestEntry(Id, Name) in [5 sec].
+
+% compute the number of candidates
+totalCandidate(Num) :- #count{Id, Name : candidate(Id,Name)}=Num.
+
+% guess
+entersContest(Id) | notEntersContest(Id) :- candidate(Id,Name).
+
+% count the number of rejections per rejected
+rejectionNum(Id,Num) :- #count{Id : notEntersContest(Id)}=Num, notEntersContest(Id).
+
+% calculate the total number of rejections
+totalRejected(Num) :- #sum{N,Id : rejectionNum(Id,N)}=Num.
+
+% it can't be that the number of rejections is less than half the candidates 
+:- totalRejected(Rej), totalCandidate(Can), Rej < Can/2.
+
+% prefer solutions with less rejections
+:~ totalRejected(Num). [Num@1]

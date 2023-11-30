@@ -1,7 +1,0 @@
-h(X)|h(X+1):- a(X).
-b(X):- i(X) count Y in {1,3}, j(Y), Y/2=1.
-a(X):-b(X) always in [2sec].
-b(X):-c(X).
-k(X)|x(X) :- b(X) in {1}, h(X).
-c(X):-a(X).
-

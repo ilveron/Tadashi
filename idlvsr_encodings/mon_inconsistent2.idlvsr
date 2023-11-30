@@ -1,0 +1,6 @@
+p(D) :- s(D) in [30], u(M) in [30], a(D,M) in {1}.
+m(X) | f(X) | n(X) :- p(X).
+
+:- m(X), p(X).
+:- f(X), p(X).
+:- n(X), p(X).

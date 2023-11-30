@@ -1,0 +1,3 @@
+wellCooked(P) | notWellCooked(P) :- pizza(P) in {3}.
+pricing(Pizza, Price) :- wellCooked(Pizza), &get_pricing(Pizza; Price).
+dineIn(Pizza, Price) | takeAway(Pizza, Price) :- pricing(Pizza, Price) in {1}.

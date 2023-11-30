@@ -1,0 +1,4 @@
+a(X) | c(X) :- h(X) in [3 sec]. 
+b(Sq) | d(Sq) :- a(X), &squared(X;Sq).
+q(Sqrt) :- c(X), &sqrt(X;Sqrt).
+e(X) :- a(X), not b(X), X>10.

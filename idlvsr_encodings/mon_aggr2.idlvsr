@@ -1,0 +1,5 @@
+f(X) | b(X) :- q(X), q(X) at most 1 in [5 sec].
+foo(M) :- #count{X : f(X)} > 0, M=#min{X : f(X)}.
+bar(M) :- #count{X : b(X)} > 0, M=#max{X : b(X)}.
+gg(M, N) :- foo(M), M < 10, N = @now.
+wp(M, N) :- bar(M), M > 15, N = @now.
