@@ -50,6 +50,10 @@ Before you start the suite you shall create and fill the following three directo
 
 I-DLV-sr is needed during the `phase_1.py` script, so make sure to download [the latest release from the official repository](https://github.com/DeMaCS-UNICAL/I-DLV-sr/releases) and extract `I-DLV-sr-v2.0.0.jar` and the `reasoner` directory to the same directory as the scripts and the previously created directories.
 
+DLV2 (*without support to Python*) is needed during the `phase_2.py` script, so make sure to download [the latest release from the official site](https://dlv.demacs.unical.it/home) and copy it to the same directory, rename it to `dlv2` and give the file execution permission (via `chmod u+x <filename>`).
+
+Do the exact same for DLV2 **with support to python** if you need to test encodings having external definitions in it (renaming it `dlv2-python`).
+
 ### Run the suite
 
 You can alternatively execute the three Python scripts separately via the commands:
